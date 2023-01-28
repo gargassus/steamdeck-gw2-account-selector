@@ -14,7 +14,7 @@ fileName=Local-$accountName.dat
 if test -f "$fileName"; then
   echo "$fileName exists, skipping copy"
 else
-  cp ./test/Local.dat "./$fileName"
+  cp /home/deck/guildwars2/Local.dat "./$fileName"
 
   echo "$fileName file generated"
 fi
