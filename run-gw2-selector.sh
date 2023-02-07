@@ -21,5 +21,5 @@ echo Starting Guild Wars 2 with account $(echo ${accounts[selectedAccount]} | cu
 cp ${accounts[selectedAccount]} /home/deck/guildwars2/Local.dat
 
 # start the game and exit
-./run-gw2-portal.sh &
+./run-gw2-portal.sh
 exit 0
