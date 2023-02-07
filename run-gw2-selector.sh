@@ -18,7 +18,7 @@ read selectedAccount
 echo Starting Guild Wars 2 with account $(echo ${accounts[selectedAccount]} | cut -d '-' -f 2 | cut -d '.' -f 1)
 
 # copy selected file to appdata
-cp ${accounts[selectedAccount]} /home/deck/guildwars2/Local.dat
+cp ${accounts[selectedAccount]} /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Local.dat
 
 # start the game and exit
 ./run-gw2-portal.sh
