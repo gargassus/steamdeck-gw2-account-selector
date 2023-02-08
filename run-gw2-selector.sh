@@ -20,6 +20,6 @@ echo Starting Guild Wars 2 with account $(echo ${accounts[selectedAccount]} | cu
 # copy selected file to appdata
 cp ${accounts[selectedAccount]} /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Local.dat
 
-# start the game and exit
-./run-gw2-portal.sh
+# start the game with autologin and exit
+./run-gw2-portal.sh "-autologin"
 exit 0
