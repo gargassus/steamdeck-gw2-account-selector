@@ -20,6 +20,11 @@ echo Starting Guild Wars 2 with account $(echo ${accounts[selectedAccount]} | cu
 # copy selected file to appdata
 cp ${accounts[selectedAccount]} /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Local.dat
 
-# start the game with autologin and exit
-./run-gw2-portal.sh "-autologin"
+# copy settings file to appdata
+cp ./Settings.json /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Settings.json
+
+# seems that running game through this wont accept any game command line arguments
+# luckily also seems that gw2 will start up with provider portal as default
+# Run the game and redirect all output to the ether
+steam steam://rungameid/1284210 &>/dev/null
 exit 0

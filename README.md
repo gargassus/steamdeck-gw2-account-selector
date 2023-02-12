@@ -16,10 +16,6 @@ Script will search Local-${email}.dat files at the root of this repo and offer t
 
 # Scripts
 
-## run-gw2-portal.sh
-Runs Guild Wars 2 with portal provider, means that it will open the login window so that you can log in with your
-existing account and not with the Steam profile one.
-
 ## generate-account-dat.sh
 Generates account .dat-file from current Local.dat.
 1. Move Local.dat from appdata to this folder
@@ -29,5 +25,7 @@ Generates account .dat-file from current Local.dat.
 1. Reads Local-${email}.dat files to list.
 2. Prompts user which .dat-file(account) to use.
 3. Copies that .dat-file into Local.dat.
-4. Runs Guild Wars 2 which will then use the copied Local.dat
-5. ?? Script exists? Or lives and can be used again after closing game?
+4. Copies [Settings.json](Settings.json) file for game to use
+5. Runs Guild Wars 2 which will then use the copied Local.dat
+6. TODO: if Local.dat needs to be updated between batches, this would be good place to update it 
+7. ?? Script exists? Or lives and can be used again after closing game?
