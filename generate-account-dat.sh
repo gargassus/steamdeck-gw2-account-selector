@@ -14,7 +14,7 @@ fileName=Local-$accountName.dat
 if test -f "$fileName"; then
   echo "$fileName exists, skipping copy"
 else
-  cp /home/deck/guildwars2/Local.dat "./$fileName"
+  cp /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Local.dat "./$fileName"
 
   echo "$fileName file generated"
 fi
