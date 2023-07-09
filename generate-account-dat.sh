@@ -14,6 +14,11 @@ fileName=Local-$accountName.dat
 if test -f "$fileName"; then
   echo "$fileName exists, skipping copy"
 else
+
+  echo "Starting Guild Wars 2, please log in to character select and then exit to create Local.dat for account $accountName"
+
+  steam steam://rungameid/1284210 #&>/dev/null
+
   cp /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/AppData/Roaming/Guild\ Wars\ 2/Local.dat "./$fileName"
 
   echo "$fileName file generated"
