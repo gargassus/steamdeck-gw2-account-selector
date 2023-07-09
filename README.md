@@ -9,6 +9,10 @@ Script will search Local-${email}.dat files at the root of this repo and offer t
 
 ## Preset
 
+1. Install Guild Wars 2 through Steam
+2. Enable portal log in by adding '-provider Portal' into Launch options
+
+## Using selector
 1. Log in to Guild Wars 2. When in character select. Log out and close portal.
 2. Run `generate-account-dat.sh`. This will copy Local.dat and append prompted account name to it.
 3. Continue adding accounts with step 1 and 2 until satisfied.
